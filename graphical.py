@@ -28,9 +28,9 @@ frame_supp.grid(row=0, column=0, padx=10, pady=10)
 frame_afficher.grid(row=1, column=0, padx=10, pady=10)
 
 # Créer les boutons et les ajouter dans les sous-frames correspondantes
-btn_add = tk.Button(frame_add, text="Ajouter un produit",  font=("Arial", 15), bg="white", fg="black", width=20, height=2)
+btn_add = tk.Button(frame_add, text="Ajouter un produit", command=Ajouter.ajouter_produit, font=("Arial", 15), bg="white", fg="black", width=20, height=2)
 btn_modif = tk.Button(frame_modif, text="Modifier un produit", command=Modif.modif_produits, font=("Arial", 15), bg="white", fg="black", width=20, height=2)
-btn_supp = tk.Button(frame_supp, text="Supprimer un produit", font=("Arial", 15), bg="white", fg="black", width=20, height=2)
+btn_supp = tk.Button(frame_supp, text="Supprimer un produit", command=Afficher.afficher_produits, font=("Arial", 15), bg="white", fg="black", width=20, height=2)
 btn_afficher = tk.Button(frame_afficher, text="Afficher les produits", command=Afficher.afficher_produits, font=("Arial", 15), bg="white", fg="black", width=20, height=2)
 
 # Ajouter les boutons dans les sous-frames correspondantes
